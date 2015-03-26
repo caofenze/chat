@@ -87,6 +87,8 @@ $(document).ready(function() {
               // 是否开启服务器端认证
               // auth: authFun
           });
+          console.log(rt);
+          
           rt.on('close', function(event) {
             //可以在这里进行重连 自行设置重连策略
             alert('connection closed');
@@ -96,9 +98,10 @@ $(document).ready(function() {
           });
           // --------------- chat 相关监听 ---------------
           rt.on('message', function(data) {
+            console.log(data);
             //收到消息时触发
-            $('#textarea').append(JSON.stringify(data));
-            $('#textarea').append('<br>');
+            $('.mes'+$(".talkTo a").text().split(0)[1]).append(JSON.stringify(data));
+            $('.mes'+$(".talkTo a").text().split(0)[1]).append('<br>');
             console.log(data);
           });
 
