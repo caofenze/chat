@@ -39,7 +39,6 @@ function render(data) {
 		msg = $("#textarea").val();
 		name = $("#sender").val();
 	}
-	console.log(msg+","+name);
 
     
     //发送内容部分
@@ -111,7 +110,6 @@ $('#new').click(function() {
   rt.on('close', function(event) {
     //可以在这里进行重连 自行设置重连策略
     alert('connection closed');
-    console.log(event);
     $('#connect-status').text('已关闭');
     $('.online').removeClass('online').addClass('offline');
   });
@@ -141,7 +139,6 @@ $('#new').click(function() {
 });
 //==========打开==============
 $('#open').click(function() {
-    //console.log(rt);
     rt = AV.realtime({
           // 强将 appId 换为自己的 appId
           appId: appid,
@@ -212,22 +209,7 @@ $('#close').click(function() {
      console.log('与服务器已经断开！');
   });
 });
-
-//=======发送信息==========
-$('#sendbtn').click(function() {
-  conv.send({
-      msg : $("#msg").val()
-  },function(){
-    $('#msgsent').append(JSON.stringify({
-      msg: $('#msg').val(),
-      toPeerId: $("#to-peer-id").text()
-    }));
-    $('#msgsent').append('<br>');
-    $('#msg').val('');
-  });
-  
-});
-//========发送信息2==========
+//========发送信息==========
 $('#sendBtn').on("click",function() {
    
   conv.send({
