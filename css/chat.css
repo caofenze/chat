@@ -4,10 +4,24 @@ a { text-decoration: none; }
 a:hover { text-decoration: underline; color:#f60; }
 
 .content { width: 1000px; height: auto; margin: 0 auto; text-align: center; }
-.chatBox { width: 730px; border: 1px #666666 solid; height: auto; margin: 0 auto; margin-top: 150px; position: relative; }
+.chatBox { 
+	width: 730px;
+	 border: 1px #666666 solid;
+	 height: auto;
+	 margin: 0 auto;
+	 margin-top: 20px;
+	 position: relative;
+ }
 .chatLeft { border-right: 1px #bebebe solid; width: 562px; height: auto; float:left; }
 .chatRight { width: 166px; height: auto; float:right; }
-.chat01_title , .chat03_title { background: url('../img/title_bg.jpg') repeat-x 0 0; height:30px; position: relative;}
+.chat01_title , .chat03_title { 
+	 background: url('../img/title_bg.jpg') repeat-x 0 0;
+	 height:30px;
+	 position: relative;
+}
+.chat01_title {
+	top: -10px;
+}
 .talkTo {  }
 .talkTo li { background: url('../img/title-bg.png') no-repeat 0px -1px; _background-position: 0 0; line-height: 17px; float: left; padding-left: 6px; margin: 5px 20px; _margin-left: 9px; }
 .talkTo li a { background: url('../img/title-bg.png') no-repeat bottom right; padding: 4px 11px 4px 7px; _padding-top: 0px; _padding-bottom: 0px; height: 19px; font-size: 12px; font-weight: bold; color: #333; text-decoration: none;}
@@ -57,6 +71,10 @@ input.f1 , input.f2 { display: none; }
 	height: 50px;
 	resize:none;
 }
+.message .user-logo img{
+	width:50px;
+	height: 50px;
+}
 
 .message .wrap-text {
 	float: left;
@@ -105,25 +123,6 @@ input.f1 , input.f2 { display: none; }
 	vertical-align: bottom;
 	zoom: 1;
 }
-
-
-
-
-.wl_faces_box { background: url('../img/wlf_bg.png') repeat 0 0; position: absolute; width: 428px; height: 225px; bottom: 22px; left: -50px; display: none; }
-.wl_faces_content { background: #fff; border: 1px #ccc solid; width: 417px; height: 216px; margin: 3px 4px; }
-.wl_faces_content .title { background: url('../img/wlf_title_bg.jpg') repeat-x 0 0; height: 40px; position: relative; }
-.wl_faces_content .title ul {  }
-.wl_faces_content .title ul li { position: absolute; display: block;}
-.wl_faces_content .title ul li.title_name { background: url('../img/wlf_title_btn.jpg') no-repeat 0 0; width: 82px; height: 30px; bottom: 0; _bottom:-2px; left: 15px; text-align: center; line-height: 32px; font-weight: bold; color: #333; }
-.wl_faces_content .title ul li.wl_faces_close { right: 8px; top: 15px; }
-.wl_faces_content .title ul li.wl_faces_close span { background: url('../img/icon.png') repeat-x 0 0; cursor: pointer;display: block; width: 15px; height: 15px; }
-
-.wl_faces_main {  }
-.wl_faces_main ul { margin: 12px 28px; overflow: hidden; border-top: 1px #CCC solid; border-left: 1px #CCC solid; width:360px; }
-.wl_faces_main ul li { float: left; border-right: 1px #CCC solid; border-bottom: 1px #CCC solid; height: 22px; width: 26px; margin: -1px 0 0 -1px; padding: 4px 2px; text-align: center; }
-.wl_faces_main ul li img { width: 22px; height: 22px; }
-
-.wlf_icon { background: url('../img/layer_arrow.png') no-repeat 0 0; position: absolute; width: 22px; height: 9px; bottom: -4px; _bottom: -11px; left: 61px; }
 .chat03_content li label { display: block; position: absolute; width: 9px; height: 9px; left: 27px; }
 label.online { background: url('../img/status.gif') no-repeat 0 0; _background: url('../img/status.gif') no-repeat 0 5px; bottom: 4px; _bottom: 2px; }
 label.offline { background: url('../img/status.gif') no-repeat 0 -11px; bottom: 4px; _top: 25px;}
